@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Scihubify",
+  "description": "Prepends 'sci-hub.se/' to the location of your current tab",
+  "version": "1.0",
+  "icons": {
+    "48": "icons/logo_48px.png",
+    "96": "icons/logo_96px.png"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": "icons/logo_96px.png",
+    "default_title": "Scihubify!"
+  },
+  "commands": {
+    "scihubify": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F"
+      },
+      "description": "Scihubify!"
+    }
+  }
+}
